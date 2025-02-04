@@ -1,5 +1,115 @@
 # MBTI性格测试系统
 
+一个美观、专业的 MBTI 性格测试网站，帮助用户了解自己的性格类型。
+
+## 在线访问
+
+访问地址：[https://joy199703021.github.io/mbti-test](https://joy199703021.github.io/mbti-test)
+
+## 主要功能
+
+- 完整的 MBTI 性格测试
+- 精美的结果展示页面
+- 详细的性格类型解析
+- 支持结果导出为图片
+- 响应式设计，支持手机端访问
+
+## 技术栈
+
+- React.js
+- Material-UI
+- HTML2Canvas (用于导出图片)
+
+## 本地开发
+
+1. 克隆项目
+```bash
+git clone https://github.com/joy199703021/mbti-test.git
+cd mbti-test
+```
+
+2. 安装依赖
+```bash
+npm install
+```
+
+3. 启动开发服务器
+```bash
+npm start
+```
+
+4. 在浏览器中访问 `http://localhost:3000`
+
+## 部署更新
+
+当你需要更新网站内容时，按照以下步骤操作：
+
+1. 修改代码后，提交更改：
+```bash
+git add .
+git commit -m "描述你的更改"
+git push origin main
+```
+
+2. 部署到 GitHub Pages：
+```bash
+npm run deploy
+```
+
+3. 等待 1-2 分钟，更新就会在线上生效
+
+## 项目结构
+
+```
+src/
+├── components/          # 组件目录
+│   ├── WelcomePage.js  # 欢迎页面
+│   ├── TestPage.js     # 测试页面
+│   └── ResultPage.js   # 结果页面
+├── data/               # 数据文件
+│   └── questions.js    # 测试题目
+├── utils/              # 工具函数
+│   └── calculateResult.js  # 计算结果
+└── App.js             # 主应用组件
+```
+
+## 维护建议
+
+1. 定期检查和更新依赖包
+```bash
+npm update
+```
+
+2. 定期测试所有功能是否正常
+   - 测试流程是否顺畅
+   - 结果计算是否准确
+   - 图片导出功能是否正常
+
+3. 性能优化
+   - 检查代码中的警告信息
+   - 优化图片资源
+   - 减少不必要的组件渲染
+
+## 常见问题解决
+
+1. 如果本地运行时遇到依赖问题：
+```bash
+npm install
+```
+
+2. 如果部署后网站无法访问：
+   - 检查 GitHub Pages 设置
+   - 确认 gh-pages 分支是否存在
+   - 等待几分钟让部署生效
+
+3. 如果图片导出功能异常：
+   - 确保页面上所有资源都已加载完成
+   - 检查是否有跨域资源加载问题
+
+## 联系方式
+
+如有问题或建议，欢迎在 GitHub 上提交 Issue 或 Pull Request。
+
 ## 项目简介
 这是一个基于48道题的MBTI（迈尔斯-布里格斯类型指标）性格测试系统。通过回答一系列问题，帮助用户了解自己的性格类型。就像一面神奇的镜子，能够反映出你独特的性格特征。
 

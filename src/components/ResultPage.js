@@ -1366,6 +1366,18 @@ const ResultPage = ({ result = null, userName }) => {
           </Grid>
         </Grid>
       </Container>
+      {/* 添加版权信息 */}
+      <Box sx={{ 
+        width: '100%',
+        textAlign: 'center',
+        py: 2,
+        mt: 4,
+        borderTop: '1px solid rgba(0,0,0,0.1)'
+      }}>
+        <Typography variant="body2" color="text.secondary">
+          {new Date().getFullYear()} 小白屋 | 联系微信：Joy10241128
+        </Typography>
+      </Box>
     </Box>
   );
 };

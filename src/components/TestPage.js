@@ -304,6 +304,22 @@ function TestPage({ onSubmit, userName }) {
           </Button>
         </Box>
       </Paper>
+      {/* 添加版权信息 */}
+      <Box sx={{ 
+        position: 'fixed',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        textAlign: 'center',
+        py: 2,
+        bgcolor: 'rgba(255,255,255,0.9)',
+        borderTop: '1px solid rgba(0,0,0,0.1)',
+        zIndex: 1000
+      }}>
+        <Typography variant="body2" color="text.secondary">
+          {new Date().getFullYear()} 小白屋 | 联系微信：Joy10241128
+        </Typography>
+      </Box>
     </Box>
   );
 }

@@ -1,7 +1,7 @@
 {
   "name": "mbti-test-system",
   "version": "1.0.0",
-  "homepage": "https://你的用户名.github.io/仓库名",
+  "homepage": "https://joy199703021.github.io/mbti-test",
   "description": "MBTI性格测试系统",
   "private": true,
   "dependencies": {
@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "react-scripts": "5.0.1"
   }
 }
